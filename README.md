@@ -1,1 +1,1 @@
-# ipad-interactive-prototype
+# ipad-prototype
