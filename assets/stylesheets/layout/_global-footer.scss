@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// Global Footer
+// -----------------------------------------------------------------------------
+footer {
+  p, ul {
+    width: 100%;
+    @include breakpoint($bp-larger-than-mobile) {
+      width: 65%;
+    }
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: .9rem;
+  }
+  ul {
+    margin-top: 0;
+  }
+}

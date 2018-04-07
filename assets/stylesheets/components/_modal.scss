@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// Modal
+// -----------------------------------------------------------------------------
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $overlay;
+  .modal-content {
+    @include clearfix;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    min-height: 55%;
+    width: 90%;
+    @include breakpoint($bp-larger-than-mobile) {
+      width: 60%;
+    }
+    header.modal-header {
+      @include clearfix;
+      width: 100%;
+      margin-bottom: 2.4rem;
+      @include breakpoint($bp-larger-than-mobile) {
+        margin-bottom: 3.6rem;
+      }
+      h2 {
+        float: left;
+        width: 80%;
+        @include breakpoint($bp-larger-than-mobile) {
+          width: 90%;
+        }
+      }
+      button,
+      .button {
+        height: 60px;
+        width: 60px;
+      }
+      .close  {
+        float: right;
+        background-image: url("../images/icons/icon-close.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+        &:hover,
+        &:focus,
+        &:active {
+          background-image: url("../images/icons/icon-close-white.svg");
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+    section.card {
+      width: 100%;
+      min-height: 24rem;
+      p {
+        float: left;
+        width: 100%;
+        margin-bottom: 2.4rem;
+        font-weight: 600;
+        padding: 2.4rem;
+      }
+      ul {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0 2.4rem 2.4rem 2.4rem;
+        li {
+          padding: .6rem 0;
+          margin-bottom: 1.2rem;
+          border-bottom: $global-border;
+          color: $alert;
+          img {
+            width: 14px;
+            vertical-align: middle;
+            margin-right: .3rem;
+          }
+        }
+      }
+    }
+  }
+}

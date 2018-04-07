@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// Page Header
+// -----------------------------------------------------------------------------
+header.page-header {
+  @include clearfix;
+  width: 100%;
+  height: auto;
+  @include breakpoint($bp-larger-than-mobile) {
+    height: 60px;
+  }
+  margin-bottom: 2.4rem;
+  h2, ul {
+    width: 100%;
+    @include breakpoint($bp-larger-than-mobile) {
+      width: 50%;
+    }
+    float: left;
+  }
+  h2 {
+    line-height: 60px;
+  }
+}

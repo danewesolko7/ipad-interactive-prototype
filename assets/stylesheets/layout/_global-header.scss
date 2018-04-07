@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// Global Header
+// -----------------------------------------------------------------------------
+header.global-header {
+  @include clearfix;
+  width: 100%;
+  padding: 0;
+  background-color: $secondary;
+  color: white;
+  box-shadow: $global-shadow;
+  h1 {
+    text-align: center;
+    padding: .3rem 2.4rem 0 2.4rem;
+    width: 100%;
+    @include breakpoint($bp-larger-than-mobile) {
+      text-align: left;
+      width: 50%;
+    }
+    float: left;
+    font-size: 24px;
+    margin-bottom: 0;
+    a {
+      img {
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// Tabs
+// -----------------------------------------------------------------------------
+ul.tab-nav,
+ul.tab-content {
+  width: 100%;
+  margin: 0;
+}
+ul.tab-nav {
+  @include clearfix;
+  background-color: white;
+  li {
+    @include clearfix;
+    float: left;
+    width: 100%;
+    border-bottom: $global-border;
+    border-right: none;
+    @include breakpoint($bp-larger-than-mobile) {
+      width: 20%;
+      border-bottom: none;
+      border-right: $global-border;
+    }
+    button {
+      float: left;
+      border-radius: 0;
+      border: none;
+      outline: none;
+      line-height: 6rem;
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-family: $font-family;
+      color: $action;
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+      }
+    }
+    .active {
+      color: white;
+      border-color: darken($action, 25%);
+      background-color: darken($action, 25%);
+    }
+    .alert {
+      color: white;
+      border-color: $alert;
+      background-color: $alert;
+    }
+    span,
+    span.alerts {
+      display: inline-block;
+      border-radius: 50%;
+      height: 2.4rem;
+      width: 2.4rem;
+      margin-left: 1.2rem;
+      font-size: 1.2rem;
+      vertical-align: middle;
+      line-height: 1.9;
+      text-align: center;
+      &:active {
+        border-color: white;
+      }
+    }
+    span {
+      border: $global-border;
+    }
+    span.alerts {
+      background-color: $alert;
+      color: white;
+    }
+  }
+}

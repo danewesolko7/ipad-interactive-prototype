@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// Tables
+// -----------------------------------------------------------------------------
+@include breakpoint($bp-smaller-than-mobile) {
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+	background-color: white;
+	td, th {
+		height: 60px;
+		padding: .6rem .9rem;
+	}
+	th {
+		background-color: $action;
+		color: white;
+	}
+	th.header {
+		background-image: url("../images/icons/icon-sort.svg");
+		cursor: pointer;
+		background-repeat: no-repeat;
+		background-position: 98% 50%;
+	}
+	th.headerSortUp {
+		background-image: url("../images/icons/icon-sort-up.svg");
+		background-color: darken($action, 25%);
+	}
+	th.headerSortDown {
+    background-image: url("../images/icons/icon-sort-down.svg");
+    background-color: darken($action, 25%);
+}
+	tr {
+		border-bottom: 1px solid $lightgray;
+	}
+	tr.highlight {
+		border-color: darken($lightgray, 5%);
+		background-color: $lightgray;
+	}
+	td.new-hcp {
+		background-image: url("../images/icons/icon-new_hcp.svg");
+		background-repeat: no-repeat;
+		background-position: 12px center;
+		span {
+			display: none;
+		}
+	}
+	td.status {
+		span {
+			font-weight: 300;
+			margin-left: 1rem;
+		}
+	}
+	span.priority {
+		color: $priority;
+	}
+	.alert {
+		a {
+			color: $alert;
+		}
+	}
+	.alert,
+	span.alert {
+		color: $alert;
+		span.icon {
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			margin-right: .2rem;
+			background-image: url("../images/icons/icon-alert.svg");
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-size: 80%;
+		}
+	}
+}

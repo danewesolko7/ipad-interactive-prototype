@@ -1,0 +1,22 @@
+// HCP Detail
+// -----------------------------------------------------------------------------
+body.hcp-detail {
+  div.container {
+    main {
+      article {
+        header.page-header {
+          ul {
+            width: 100%;
+            li {
+              margin-left: 0;
+            }
+          }
+        }
+        section.hcp-info {
+          @include clearfix;
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// Pop Up
+// -----------------------------------------------------------------------------
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: $lightgray;
+    text-align: left;
+    padding: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    box-shadow: $global-shadow;
+    ul {
+        li {
+          color: $primary;
+        }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $lightgray transparent transparent transparent;
+    }
+  }
+  .show {
+    visibility: visible;
+  }
+}

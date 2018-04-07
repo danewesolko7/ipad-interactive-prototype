@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// Base Styles
+// -----------------------------------------------------------------------------
+// html is set to 62.5% so that all the REM measurements
+// are based on 10px sizing. 1.5rem = 15px
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+body {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: $font-family;
+  color: $font-color;
+  background-color: $lightgray;
+}
+// -----------------------------------------------------------------------------
+// Links
+// -----------------------------------------------------------------------------
+a {
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:focus,
+  &:hover,
+  &:active {
+    color: darken($action, 25%);
+  }
+}
+// -----------------------------------------------------------------------------
+// Misc
+// -----------------------------------------------------------------------------
+hr {
+  width: 100%;
+  margin: 7.2rem 0;
+  border-width: 0;
+  border-top: $global-border;
+}

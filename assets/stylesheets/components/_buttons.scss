@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+button,
+.button {
+  cursor: pointer;
+  width: auto;
+  border-radius: 2px;
+  border: 1px solid $primary;
+  background-color: transparent;
+  &:hover {
+    border-color: $action;
+    background-color: $action;
+  }
+  &:focus,
+  &:active {
+    border-color: darken($action, 25%);
+    background-color: darken($action, 25%);
+  }
+}

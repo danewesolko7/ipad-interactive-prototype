@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+// Breakpoints
+$bp-smaller-than-mobile: max-width 760px;
+$bp-larger-than-mobile: min-width 768px;
+
+// Colors
+$primary: #5E5C76;
+$secondary: #8B84D7;
+$action: #8BD3E6;
+$alert: #FFA200;
+$priority: #B40000;
+$darkgray: #ACAFAB;
+$lightgray: #F7F7F6;
+
+$font-color: $primary;
+$link-color: $action;
+
+$overlay: rgba( 60, 57, 93, .9);
+$priorty-overlay: rgba( 180, 0, 0, .1,);
+
+// Shadows
+$global-shadow: 0 2px 9px #ACAFAB;
+
+// Borders
+$global-border: 1px solid $lightgray;
+
+// Fonts
+$font-family: 'Nunito', sans-serif;
+$heading-font-family: 'Nunito', sans-serif;
+
+// Font Sizes
+$body-font-size: 1.6rem;
+$body-font-leading: 1.45;
+
+$heading-1-font-size: 3.6rem;
+$heading-2-font-size: 2.4rem;
+$heading-3-font-size: 2.1rem;
+$heading-4-font-size: 1.8rem;
+$heading-5-font-size: 1.6rem;
+$heading-6-font-size: 1.4rem;
+
+$heading-1-leading: 2.4;
+$heading-2-leading: 2.1;
+$heading-3-leading: 1.8;
+$heading-4-leading: 1.8;
+$heading-5-leading: 1.2;
+$heading-6-leading: 1.2;
+
+//Grid Variables
+$container-width: 100%;

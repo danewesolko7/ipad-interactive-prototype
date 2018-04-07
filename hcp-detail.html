@@ -1,0 +1,422 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Provider Detail</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/stylesheets/styles.css">
+
+  <script src="assets/javascripts/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="assets/javascripts/vendor/jquery-3.2.1.min.js"></script>
+  <script src="assets/javascripts/vendor/jquery.tablesorter.js"></script>
+
+
+</head>
+
+<body class="hcp-detail">
+  <div class="container">
+
+    <header class="global-header">
+      <h1 class="brand">
+        <a href="index.html"><img src="assets/images/eucrisa-logo-white.png" alt="Eucrisa" /></a>
+      </h1>
+      <ul class="region-rep">
+        <li><img src="assets/images/icons/icon-globe.svg">Seattle-Tacoma</li>
+        <li class="dropdown"><a href="javascript:void(0)"><img src="assets/images/icons/icon-user.svg">j.hendrix@pfizer.com</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Profile Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <article>
+        <header class="page-header">
+          <ul class="controls">
+            <a href="index.html"><li class="button back"><span>Back</span></li></a>
+            <li class="button download"><span>Download</span></li>
+            <li class="button print"><span>Print</span></li>
+          </ul>
+        </header>
+
+        <section class="hcp-info">
+          <ul class="doctor">
+            <li><h2>Dr. Angela Kyei</h2></li>
+            <li>1134145261</li>
+            <li>Dermatology</li>
+          </ul>
+          <ul class="contact-info">
+            <li>
+              <ul class="address">
+                <li class="title">
+                  <img src="assets/images/icons/icon-house.svg">
+                  <span>Address</span>
+                </li>
+                <li>
+                  <ul>
+                    <li>970 Grimes Bypass Unit 011</li>
+                    <li>Seattle, WA</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="contact">
+                <li class="title">
+                  <img src="assets/images/icons/icon-contact.svg">
+                  <span>Contact</span>
+                </li>
+                <li>
+                  <ul>
+                    <li>Tel: 573-392-3087</li>
+                    <li>Fax: 573-392-3088</li>
+                    <li>a.kyei@drkyei.com</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <ul class="tab-nav">
+            <li><button class="tab-link" onclick="openTab(event, 'pending')" id="defaultOpen">Pending<span>9</span></button></li>
+            <li><button class="tab-link" onclick="openTab(event, 'active')">Active<span>3</span></button></li>
+            <li><button class="tab-link" onclick="openTab(event, 'suspended')">Suspended<span class="alerts">2</span></button></li>
+            <li><button class="tab-link" onclick="openTab(event, 'cancelled')">Cancelled<span>4</span></button></li>
+            <li><button class="tab-link" onclick="openTab(event, 'filled-locally')">Filled Locally<span>2</span></button></li>
+          </ul>
+          <ul class="tab-content">
+            <li id="pending" class="tab">
+              <table id="casePending" class="tablesorter">
+                <thead>
+                  <tr>
+                    <th>SPID</th>
+                    <th>Status</th>
+                    <th>Alerts</th>
+                    <th>Received</th>
+                    <th>Last Activity</th>
+                    <th>Insurance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="case-status-pending.html">466987</a></td>
+                    <td class="status">Pending PA - Payer</td>
+                    <td></td>
+                    <td>11/01/2017</td>
+                    <td>11/21/2017</td>
+                    <td><a  href="javascript:void(0);" class="modal-trigger" data-modal="#modalTwo">Commercial</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">460239</a></td>
+                    <td class="status">Pending Benefits</td>
+                    <td class="alert"><a  href="javascript:void(0);" class="modal-trigger" data-modal="#modalOne"><span class="alert"><span class="icon"></span>Referral not clean</span></a></td>
+                    <td>11/01/2017</td>
+                    <td>11/21/2017</td>
+                    <td><a href="javascript:void(0);">Multiple +</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td class="status">Pending PA - CareMed</td>
+                  <td></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466989</a></td>
+                  <td class="status">Pending Benefits</td>
+                  <td class="alert"><a  href="javascript:void(0);"><span class="alert"><span class="icon"></span>Referral not clean</span></a></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466554</a></td>
+                  <td class="status">Delivery Scheduled</td>
+                  <td></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">460239</a></td>
+                  <td class="status">Pending Benefits</td>
+                  <td class="alert"><a  href="javascript:void(0);"><span class="alert"><span class="icon"></span>Referral not clean</span></a></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">467878</a></td>
+                  <td class="status">Pending Benefits</td>
+                  <td class="alert"><a  href="javascript:void(0);"><span class="alert"><span class="icon"></span>Referral not clean</span></a></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">496235</a></td>
+                  <td class="status">Coordinating Delivery</td>
+                  <td></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">456987</a></td>
+                  <td class="status">Benefits Complete</td>
+                  <td></td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Medicaid</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li id="active" class="tab">
+            <table id="caseActive" class="tablesorter">
+              <thead>
+                <tr>
+                  <th>SPID</th>
+                  <th>Status</th>
+                  <th>First Shipped</th>
+                  <th>Last Shipped</th>
+                  <th>Total Shipments</th>
+                  <th>Auth. Refills</th>
+                  <th>Insurance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="case-status-active.html">466987</a></td>
+                  <td>Refills Available</td>
+                  <td>11/01/2017</td>
+                  <td></td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">460239</a></td>
+                  <td>Complete</td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td>2</td>
+                  <td></td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">459473</a></td>
+                  <td>Complete</td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td>2</td>
+                  <td></td>
+                  <td><a href="javascript:void(0);">Medicaid</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li id="suspended" class="tab">
+            <table id="caseSuspended" class="tablesorter">
+              <thead>
+                <tr>
+                  <th>SPID</th>
+                  <th>Status</th>
+                  <th>Received</th>
+                  <th>Last Activity</th>
+                  <th>Insurance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="case-status-suspended.html">466987</a></td>
+                  <td>Unable to contact patient</td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td>Patient has samples</td>
+                  <td>09/15/2017</td>
+                  <td>10/23/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li id="cancelled" class="tab">
+            <table id="caseCancelled" class="tablesorter">
+              <thead>
+                <tr>
+                  <th>SPID</th>
+                  <th>Status</th>
+                  <th>Received</th>
+                  <th>Updated</th>
+                  <th>Insurance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="case-status-cancelled.html">466987</a></td>
+                  <td>Other</td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td>Patient choice</td>
+                  <td>09/15/2017</td>
+                  <td>10/23/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td>Physician's choice</td>
+                  <td>09/15/2017</td>
+                  <td>10/23/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td>Entered in error</td>
+                  <td>09/15/2017</td>
+                  <td>10/23/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li id="filled-locally" class="tab">
+            <table id="caseFilled" class="tablesorter">
+              <thead>
+                <tr>
+                  <th>SPID</th>
+                  <th>Status</th>
+                  <th>Received</th>
+                  <th>Updated</th>
+                  <th>Insurance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="case-status-filled-locally.html">466987</a></td>
+                  <td>Filled Locally</td>
+                  <td>11/01/2017</td>
+                  <td>11/21/2017</td>
+                  <td><a href="javascript:void(0);">Commercial</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">466987</a></td>
+                  <td>Filled Locally</td>
+                  <td>09/15/2017</td>
+                  <td>10/23/2017</td>
+                  <td><a href="javascript:void(0);">Medicare</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </section>
+
+      <aside id="modalOne" class="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Case Alert Details</h2>
+            <button class="close"><span>Close</span></button>
+          </header>
+          <section class="card">
+            <p>The following items are missing:</p>
+            <ul>
+              <li><img src="assets/images/icons/icon-alert.svg">Missing Medications Tried</li>
+              <li><img src="assets/images/icons/icon-alert.svg">Missing ICD 10</li>
+              <li><img src="assets/images/icons/icon-alert.svg">Missing location</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <aside id="modalTwo" class="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Insurance Provider Details</h2>
+            <button class="close"><span>Close</span></button>
+          </header>
+          <section class="card">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Primary Payor</th>
+                  <th>Type</th>
+                  <th>Secondary</th>
+                  <th>Type</th>
+                  <th>Patient Copay</th>
+                </tr>
+                <tr>
+                  <td>Aetna</td>
+                  <td>Commercial</td>
+                  <td>Payor None</td>
+                  <td>PPO</td>
+                  <td>$75</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </aside>
+
+    </article>
+  </main>
+
+  <footer class="global-footer">
+    <p>Copyright &copy; 2017 Pfizer Inc. All rights reserved.</p>
+    <p>Patient access programs such as eucrisa&#8226;4&#8226;you are only for the benefit of patients. During your interactions with your customers, no patient identifying information can be discussed:</p>
+    <ul>
+      <li>
+        Do not ask questions that are likely to result in access to patient identifying information
+      </li>
+      <li>
+        Only use eucrisa&#8226;4&#8226;you patient case ID in reference to a specific patient case
+      </li>
+      <li>
+        Never discuss status of Patient Assistance Program (PAP) patients
+        Do not use any other subset of the patient’s name (i.e. last name, initials, etc.)
+      </li>
+    </ul>
+
+    <p>To remain compliant, please note all eucrisa&#8226;4&#8226;you forms and other patient specific forms are only to be completed by office staff or the HCP</p>
+
+    <p>Corporate Policy 404 – Protecting the Privacy of Personal Information, requires all Pfizer colleagues to employ appropriate safeguards to protect Personal Information they have access to, including the Personal Information of customers or patients</p>
+  </footer>
+
+</div>
+
+<script>
+  $(document).ready(function()
+    {
+      $("#casePending,#caseActive,#caseSuspended,#caseCancelled,#caseFilled").tablesorter();
+    }
+  );
+</script>
+
+<script src="assets/javascripts/main.js"></script>
+<script src="assets/javascripts/plugins.js"></script>
+
+<script>
+  {
+    document.getElementById("defaultOpen").click();
+  }
+</script>
+
+</body>
+</html>
